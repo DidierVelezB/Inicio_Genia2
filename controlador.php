@@ -1,7 +1,6 @@
 <?php 
 
 session_start();
-header('Content-Type: application/json; charset=utf-8');
 
 if($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["usuario"]) || empty($_POST["contraseña"])) {
