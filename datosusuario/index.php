@@ -11,7 +11,7 @@
   <div class="container">
     <header>
       <div class="home-icon">
-        <a href="../Inicio_principal/index.php">    
+        <a href="../ropa_venta/index.php">    
           <i class="fa-solid fa-house-chimney"></i>
           <span class="home-text">HOME</span>
         </a>

@@ -10,7 +10,7 @@
 <header>
   <div class="nav-left">
     <div class="dropdown">
-      <a href="../datosusuario/index.php">Mi Perfil</a>
+      <a href="../perfil/index.php">Mi Perfil</a>
       <div class="dropdown-content">
         <a href="../reportes/index.php">Reportes</a>
         <a href="#">Soporte Técnico</a>

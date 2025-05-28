@@ -1,55 +1,100 @@
- * {
+/* RESET GENERAL */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
 
+/* BASE */
 html, body {
     width: 100vw;
     height: 100vh;
-    overflow: hidden; /* evita el scroll */
-    margin: 0;
-    padding: 0;
+    overflow: hidden;
+    background-color: #e6e6e6;
 }
 
+/* CLASES UTILITARIAS */
+.btn {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+}
+p {
+    text-align: center;
+    font-size: 26px;
+    margin-top: 10px;
+}
 
+.btn-green {
+    background-color: darkgreen;
+}
+
+.btn-brown {
+    background-color: #A26C44;
+}
+
+.btn-brown:hover {
+    background-color: #8B5733;
+}
+
+.btn-turquoise {
+    background-color: turquoise;
+}
+
+.full-width {
+    width: 943px;
+}
+
+/* HOME BUTTON */
 .home-button {
-    position: fixed; /* fijo en la pantalla, arriba a la izquierda */
+    position: fixed;
     top: 25px;
     left: 25px;
     background-color: #00b5b5;
-    padding: 8px 12px;  /* del segundo CSS, para buen espacio */
-    border-radius: 10px; /* tomo del segundo CSS para redondear más */
+    padding: 8px 12px;
+    border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     z-index: 10000;
     display: flex;
     align-items: center;
-    gap: 6px; /* espacio entre icono y texto */
+    gap: 6px;
 }
-
+h1 {
+    text-align: center;
+    flex-grow: 1;
+    color: #4a3c35;
+    padding-top: 20px;
+}
 .home-button a {
-    color: rgb(0, 0, 0); /* contraste para que se lea sobre el turquesa */
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-weight: bold;
     display: flex;
     align-items: center;
     font-size: 16px;
     transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+.home-button .home{
+    padding-left: 6px;
 }
 
 .home-button a:hover {
     opacity: 0.85;
 }
 
-
+/* CONTENEDOR PRINCIPAL */
 .container {
     width: 95%;
     height: 90%;
     border: 3px solid black;
     display: flex;
     padding: 20px;
-    margin: 85px auto 0 auto; /* Margen arriba para no quedar debajo del botón */
+    margin: 20px auto 0 auto;
 }
 
 .perfil, .historial {
@@ -58,22 +103,30 @@ html, body {
     height: 100%;
 }
 
-select {
-    padding: 3px;
-    font-size: 15px;
-    border: 1px solid #000000;
-    border-radius: 0px;
-    width: calc(50% - 52px);
-    box-sizing: border-box;
-    margin: 5px 0;
-}
-
 .perfil {
     width: 65%;
 }
 
 .historial {
-    width: 35%;
+    width: 45%;
+
+}
+.titulo-historial {
+    background-color: #00b5b5; 
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    letter-spacing: 1px;
+}
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .perfil img {
@@ -81,27 +134,36 @@ select {
     height: 80px;
     border: 2px solid black;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 10px; 
 }
 
+
+/* INPUTS Y SELECTS */
 input {
     width: 45%;
     padding: 5px;
     margin: 5px 0;
     border: 1px solid black;
 }
-
-.full-width {
-    width: 90.4%;
+.input-cedula{
+    width: 500px;;
+}
+.input-apellidos{
+    width: 501px;;
+}
+.input-nombre{
+    width: 438px;;
+}
+.documento {
+    width: 438px;
 }
 
-.editar {
-    background-color: turquoise;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    margin-top: 10px;
+select {
+    padding: 3px;
+    font-size: 15px;
+    border: 1px solid #000000;
+    width: calc(50% - 52px);
+    margin: 5px 0;
 }
 
 select[name="tipo_documento"] {
@@ -111,78 +173,102 @@ select[name="tipo_documento"] {
     font-weight: normal;
 }
 
-.historial button {
-    background-color: darkgreen;
-    color: white;
+/* BOTONES */
+.editar {
+    @extend .btn;
+    @extend .btn-turquoise;
+    margin-top: 10px;
+    background-color: #00b5b5;
     padding: 10px;
-    border: none;
-    width: 100%;
+    border: none; 
+    outline: none; 
+    color: black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+.editar:hover {
+    background-color: #009999;
+}
+.editar:active {
+    transform: scale(0.98);
+    background-color: #0e5855;
 }
 
+
+/* AVATAR */
+.avatar {
+    width: 250px;
+    height: 250px;
+    background-color: #eee;
+    margin-bottom: 15px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 1/1;
+    border: 1px solid #ccc;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.avatar:hover img {
+    transform: scale(1.03);
+}
+
+.avatar input[type="file"] {
+    display: none;
+}
+
+.usuario-info .avatar {
+    width: 150px;
+    height: 150px;
+    background-color: #eee;
+    margin-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.usuario-info .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    border: 1px solid #ccc;
+    transition: transform 0.3s ease;
+    
+}
+
+.usuario-info .avatar:hover img {
+    transform: scale(1.05);
+}
+
+.usuario-info .avatar input[type="file"] {
+    display: none;
+}
+
+.avatar button {
+    @extend .btn;
+    @extend .btn-brown;
+    margin-top: 10px;
+    padding: 8px 16px;
+    
+    
+}
+
+/* EFECTO ZIGZAG */
 .zigzag {
     width: 100%;
-    height: calc(100% - 40px);
+    height: calc(100% - 60px);
     background-image: repeating-linear-gradient(45deg, black 0px, black 2px, transparent 2px, transparent 6px);
     margin-top: 10px;
-}
-
-/* Estilos para la barra superior (si usas en otro momento) */
-.top-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background: #ffffff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 1000;
-}
-
-.nav-left, .nav-right {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-
-.nav-item {
-  position: relative;
-  cursor: pointer;
-  color: #333;
-  transition: color 0.3s ease;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.nav-item:hover {
-  color: #007bff;
-}
-
-/* Dropdown menu */
-.dropdown {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  min-width: 180px;
-  border-radius: 8px;
-  padding: 0.5rem 0;
-  margin-top: 0.5rem;
-}
-
-.nav-item:hover .dropdown {
-  display: block;
-}
-
-.dropdown a {
-  display: block;
-  padding: 0.8rem 1.5rem;
-  color: #444;
-  transition: all 0.3s ease;
-}
-
-.dropdown a:hover {
-  background: #f8f9fa;
-  color: #007bff;
 }

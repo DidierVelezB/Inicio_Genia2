@@ -11,22 +11,21 @@
     <body>
         
         <div class="home-button">
-            <a href="../ropa_venta/index.php" class="home-link">    
-            <i class="fa-solid fa-house-chimney"></i>
-            <span class="">HOME</span>
-            </a>    
+                <a href="../ropa_venta/index.php" class="home-link">    
+                <i class="fa-solid fa-house-chimney"></i>
+            <span class="home">HOME</span>
+            </a> 
         </div>
+            <h1>PERFIL</h1>  
         <div class="container">
-            <div class="perfil">
-                <p>PERFIL</p>
+            <div class="perfil">        
                 <div class="avatar">
-                    <img
-                        src="<?=
-                            isset($_COOKIE['foto_usuario'])
-                            ? '../datosusuario/' . $_COOKIE['foto_usuario'] . '?ts=' . time()
-                            : '../datosusuario/uploads/default.jpg'
-                        ?>"
-                        alt="Usuario">
+                    <form action="subir_foto.php" method="POST" enctype="multipart/form-data">
+                        <label for="fotoInput">
+                            <img src="<?php echo isset($_COOKIE['foto_usuario']) ? $_COOKIE['foto_usuario'] . '?ts=' . time() : 'https://via.placeholder.com/100x100?text=?'; ?>" alt="Usuario" id="avatarImg">
+                        </label>
+                        <input type="file" name="foto" id="fotoInput" accept="image/*" onchange="this.form.submit()">
+                    </form>
                 </div>
                 <br>
                 <form action="update.php" method="POST">
@@ -49,7 +48,7 @@
                 </form>
             </div>
             <div class="historial">
-                <button>HISTORIAL</button>
+                <div class="titulo-historial">HISTORIAL</div>
                 <div class="zigzag"></div>
             </div>
         </div>

@@ -5,21 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reportes</title>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="logo">
-                <span class="home-link">HOME</span>
-                <div class="icono"></div>
-            </div>
+            <div class="home-button">
+                <a href="../ropa_venta/index.php" class="home-link">    
+                <i class="fa-solid fa-house-chimney"></i>
+            <span class="">HOME</span>
+            </a> 
+        </div>
             <h1>REPORTES</h1>
         </header>
 
         <form action="procesar.php" method="POST" class="formulario">
             <div class="form-columna">
                 <div class="imagen-perfil">
-                    <img src="perfil.png" alt="Foto de perfil">
+                    <img src="<?= isset($_COOKIE['foto_usuario']) 
+                        ? '../perfil/' . $_COOKIE['foto_usuario'] . '?ts=' . time()
+                        : '../perfil/uploads/default.jpg' ?>" 
+                    alt="Usuario">
                 </div>
                 <label>NOMBRES</label>
                 <input type="text" name="nombres" required>
