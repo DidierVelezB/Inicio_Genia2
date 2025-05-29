@@ -49,13 +49,14 @@ $stmt->close();
 $hashed = password_hash($rawPass, PASSWORD_DEFAULT);
 
 $stmt = $conexion->prepare("
-    INSERT INTO cliente (nombre, correoElectronico, contraseña) 
-    VALUES (?, ?, ?)
+    INSERT INTO cliente (nombre, correoElectronico, contraseña, rol) 
+    VALUES (?, ?, ?, ?)
 ");
 if (!$stmt) {
     die('Error en prepare(): ' . $conexion->error);
 }
-$stmt->bind_param('sss', $usuario, $correo, $hashed);
+$rol = 'cliente';
+$stmt->bind_param('ssss', $usuario, $correo, $hashed, $rol);
 
 if ($stmt->execute()) {
         header('Location: ../index.php');
@@ -69,3 +70,4 @@ if ($stmt->execute()) {
 
 $stmt->close();
 $conexion->close();
+?>
