@@ -1,3 +1,4 @@
+
 const productosPorPagina = 5;
 let productosFiltrados = []; // Aquí guardaremos los productos filtrados
 let paginaActual = 1;

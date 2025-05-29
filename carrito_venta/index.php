@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -50,6 +51,9 @@
     </section>
 </main>
     </div>
+        <script>
+            const usuarioID = <?php echo isset($_SESSION['usuario_id']) ? $_SESSION['usuario_id'] : 'null'; ?>;
+        </script>
     <script src="carrito.js"></script>
 </body>
 </html>

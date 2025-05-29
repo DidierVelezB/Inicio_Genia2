@@ -1,3 +1,4 @@
+
 function mezclarProductos() {
   const contenedor = document.querySelector('.productos-grid');
   const productos = Array.from(contenedor.children);

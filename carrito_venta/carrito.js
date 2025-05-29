@@ -38,7 +38,7 @@ function cargarCarrito() {
     
     contenedor.innerHTML = carrito.map((producto, index) => `
         <div class="item-carrito">
-            <img src="${producto.imagen}" alt="${producto.nombre}"
+            <img src="${producto.imagen}" alt="${producto.nombre}"/>
             <div class="info-producto">
                 <h3>${producto.nombre}</h3>
                 <p>Talla: ${producto.talla}</p>
@@ -128,24 +128,43 @@ function actualizarContador() {
 
 
 // Procesar pago
-function procesarPago() {
+async function procesarPago() {
     const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
-    const descuento = JSON.parse(sessionStorage.getItem('descuentoAplicado')) || null;
-    
-    let mensaje = `¡Compra realizada por $${document.getElementById('total').textContent}!`;
-    
-    if (descuento) {
-        mensaje += `\n(Descuento del ${descuento.porcentaje}% aplicado)`;
+
+    if (carrito.length === 0) {
+        alert("Tu carrito está vacío.");
+        return;
     }
-    
-    alert(`${mensaje}\nGracias por su compra.`);
-    
-    // Limpiar almacenamiento
-    localStorage.removeItem('carrito');
-    sessionStorage.removeItem('descuentoAplicado');
-    actualizarContador();
-    window.location.reload();
+    if (!usuarioID) {
+        alert("Debes iniciar sesión para procesar el pago.");
+        return;
+    }
+
+    try {
+        const response = await fetch('guardar_historial.php', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                id_cliente: usuarioID, 
+                productos: carrito
+            })
+        });
+
+        const data = await response.json();
+        if (data.success) {
+            alert("Compra guardada en historial correctamente.");
+            localStorage.removeItem('carrito');
+            actualizarContador();
+            window.location.reload();
+        } else {
+            alert("Error al guardar el historial: " + data.error);
+        }
+    } catch (error) {
+        console.error("Error:", error);
+        alert("Error al procesar el pago.");
+    }
 }
+
 function agregarAlCarrito() {
     const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
@@ -160,7 +179,7 @@ function agregarAlCarrito() {
     carrito.push(producto);
     localStorage.setItem('carrito', JSON.stringify(carrito));
     actualizarContador();
-    alert("✅ Producto añadido al carrito");
+    alert(" Producto añadido al carrito");
 }
 
  

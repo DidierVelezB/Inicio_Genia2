@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -66,7 +69,7 @@
       <!-- Camisas -->
         <div class="producto"  data-categoria="camisas-hombre">
             <div class="img-placeholder">
-                <img src="../img/Camisas/hombre/Camisa1.webp" alt="Camiseta" style="width: 200px; height: 200px; object-fit: cover;">
+                <img src="/img/Camisas/hombre/Camisa1.jpg" alt="Camiseta" style="width: 200px; height: 200px; object-fit: cover;">
             </div>
             <div class="info">
                 <h3>Camiseta Básica</h3>
@@ -78,7 +81,7 @@
 
         <div class="producto" data-categoria="camisas-hombre">
             <div class="img-placeholder">
-                <img src="../img/Camisas/hombre/Camisa2.jpg" alt="Camiseta" style="width: 200px; height: 200px; object-fit: cover;">
+                <img src="/img/Camisas/hombre/Camisa2.jpg" alt="Camiseta" style="width: 200px; height: 200px; object-fit: cover;">
             </div>
             <div class="info">
                 <h3>Camiseta Premium</h3>
@@ -90,7 +93,7 @@
 
         <div class="producto" data-categoria="camisas-hombre">
             <div class="img-placeholder">
-                <img src="../img/Camisas/hombre/Camisa3.jpg" alt="Camiseta" style="width: 200px; height: 200px; object-fit: cover;">
+                <img src="/img/Camisas/hombre/Camisa3.jpg" alt="Camiseta" style="width: 200px; height: 200px; object-fit: cover;">
             </div>
             <div class="info">
                 <h3>Camiseta Deportiva</h3>
@@ -102,7 +105,7 @@
 
         <div class="producto" data-categoria="camisas-hombre">
           <div class="img-placeholder">
-            <img src="../img/Camisas/hombre/Camisa4.jpg" alt="Camisa" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Camisas/hombre/Camisa4.jpg" alt="Camisa" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Camiseta Modelo 4</h3>
@@ -114,7 +117,7 @@
 
         <div class="producto" data-categoria="camisas-hombre">
           <div class="img-placeholder">
-            <img src="../img/Camisas/hombre/Camisa5.jpg" alt="Camisa" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Camisas/hombre/Camisa5.jpg" alt="Camisa" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Camiseta Modelo 5</h3>
@@ -126,7 +129,7 @@
       <!--Camisas mujer -->
         <div class="producto" data-categoria="camisas-mujer">
           <div class="img-placeholder">
-            <img src="../img/Camisas/mujer/Camisa1.jpg" alt="Camisa" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Camisas/mujer/Camisa1.jpg" alt="Camisa" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Camiseta Modelo 6</h3>
@@ -138,7 +141,7 @@
 
         <div class="producto" data-categoria="camisas-mujer">
           <div class="img-placeholder">
-            <img src="../img/Camisas/mujer/Camisa2.jpg" alt="Camisa" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Camisas/mujer/Camisa2.jpg" alt="Camisa" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Camiseta Modelo 7</h3>
@@ -150,7 +153,7 @@
 
         <div class="producto" data-categoria="camisas-mujer">
           <div class="img-placeholder">
-            <img src="../img/Camisas/mujer/Camisa3.jpg" alt="Camisa" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Camisas/mujer/Camisa3.jpg" alt="Camisa" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Camiseta Modelo 8</h3>
@@ -162,7 +165,7 @@
 
         <div class="producto" data-categoria="camisas-mujer">
           <div class="img-placeholder">
-            <img src="../img/Camisas/mujer/Camisa4.jpg" alt="Camisa" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Camisas/mujer/Camisa4.jpg" alt="Camisa" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Camiseta Modelo 9</h3>
@@ -174,7 +177,7 @@
 
         <div class="producto" data-categoria="camisas-mujer">
           <div class="img-placeholder">
-            <img src="../img/Camisas/mujer/Camisa5.jpg" alt="Camisa" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Camisas/mujer/Camisa5.jpg" alt="Camisa" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Camiseta Modelo 10</h3>
@@ -188,7 +191,7 @@
           <!--Hombre -->
         <div class="producto" data-categoria="pantalones-hombre">
           <div class="img-placeholder">
-            <img src="../img/Pantalones/hombre/pantalon1.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Pantalones/hombre/pantalon1.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Pantalón Modelo 1</h3>
@@ -200,7 +203,7 @@
 
         <div class="producto" data-categoria="pantalones-hombre">
           <div class="img-placeholder">
-            <img src="../img/Pantalones/hombre/pantalon2.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Pantalones/hombre/pantalon2.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Pantalón Modelo 2</h3>
@@ -212,7 +215,7 @@
 
         <div class="producto" data-categoria="pantalones-hombre">
           <div class="img-placeholder">
-            <img src="../img/Pantalones/hombre/pantalon3.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Pantalones/hombre/pantalon3.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Pantalón Modelo 3</h3>
@@ -224,7 +227,7 @@
 
         <div class="producto" data-categoria="pantalones-hombre">
           <div class="img-placeholder">
-            <img src="../img/Pantalones/hombre/pantalon4.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Pantalones/hombre/pantalon4.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Pantalón Modelo 4</h3>
@@ -236,7 +239,7 @@
 
         <div class="producto" data-categoria="pantalones-hombre">
           <div class="img-placeholder">
-            <img src="../img/Pantalones/hombre/pantalon5.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Pantalones/hombre/pantalon5.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Pantalón Modelo 5</h3>
@@ -248,7 +251,7 @@
             <!--Mujer -->
         <div class="producto" data-categoria="pantalones-mujer">
           <div class="img-placeholder">
-            <img src="../img/Pantalones/mujer/pantalon1.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Pantalones/mujer/pantalon1.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Pantalón Modelo 6</h3>
@@ -260,7 +263,7 @@
 
         <div class="producto" data-categoria="pantalones-mujer">
           <div class="img-placeholder">
-            <img src="../img/Pantalones/mujer/pantalon2.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Pantalones/mujer/pantalon2.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Pantalón Modelo 7</h3>
@@ -272,7 +275,7 @@
 
         <div class="producto" data-categoria="pantalones-mujer">
           <div class="img-placeholder">
-            <img src="../img/Pantalones/mujer/pantalon3.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Pantalones/mujer/pantalon3.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Pantalón Modelo 8</h3>
@@ -284,7 +287,7 @@
 
         <div class="producto" data-categoria="pantalones-mujer">
           <div class="img-placeholder">
-            <img src="../img/Pantalones/mujer/pantalon4.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Pantalones/mujer/pantalon4.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Pantalón Modelo 9</h3>
@@ -296,7 +299,7 @@
 
         <div class="producto" data-categoria="pantalones-mujer">
           <div class="img-placeholder">
-            <img src="../img/Pantalones/mujer/pantalon5.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Pantalones/mujer/pantalon5.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Pantalón Modelo 10</h3>
@@ -310,7 +313,7 @@
           <!--Hombre -->
         <div class="producto" data-categoria="chaquetas-hombre">
           <div class="img-placeholder">
-            <img src="../img/Chaquetas/hombre/chaqueta1.jpg" alt="Chaqueta" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Chaquetas/hombre/chaqueta1.jpg" alt="Chaqueta" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Chaqueta Modelo 1</h3>
@@ -322,7 +325,7 @@
 
         <div class="producto" data-categoria="chaquetas-hombre">
           <div class="img-placeholder">
-            <img src="../img/Chaquetas/hombre/chaqueta2.jpg" alt="Chaqueta" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Chaquetas/hombre/chaqueta2.jpg" alt="Chaqueta" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Chaqueta Modelo 2</h3>
@@ -334,7 +337,7 @@
 
         <div class="producto" data-categoria="chaquetas-hombre">
           <div class="img-placeholder">
-            <img src="../img/Chaquetas/hombre/chaqueta3.jpg" alt="Chaqueta" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Chaquetas/hombre/chaqueta3.jpg" alt="Chaqueta" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Chaqueta Modelo 3</h3>
@@ -346,7 +349,7 @@
 
         <div class="producto" data-categoria="chaquetas-hombre">
           <div class="img-placeholder">
-            <img src="../img/Chaquetas/hombre/chaqueta4.jpg" alt="Chaqueta" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Chaquetas/hombre/chaqueta4.jpg" alt="Chaqueta" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Chaqueta Modelo 4</h3>
@@ -358,7 +361,7 @@
  
         <div class="producto" data-categoria="chaquetas-hombre">
           <div class="img-placeholder">
-            <img src="../img/Chaquetas/hombre/chaqueta5.jpg" alt="Chaqueta" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Chaquetas/hombre/chaqueta5.jpg" alt="Chaqueta" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Chaqueta Modelo 5</h3>
@@ -371,7 +374,7 @@
           <!--Mujer -->
         <div class="producto" data-categoria="chaquetas-mujer">
           <div class="img-placeholder">
-            <img src="../img/Chaquetas/mujer/chaqueta1.jpg" alt="Chaqueta" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Chaquetas/mujer/chaqueta1.jpg" alt="Chaqueta" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Chaqueta Modelo 6</h3>
@@ -383,7 +386,7 @@
 
         <div class="producto" data-categoria="chaquetas-mujer">
           <div class="img-placeholder">
-            <img src="../img/Chaquetas/mujer/chaqueta2.jpg" alt="Chaqueta" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Chaquetas/mujer/chaqueta2.jpg" alt="Chaqueta" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Chaqueta Modelo 7</h3>
@@ -395,7 +398,7 @@
 
         <div class="producto" data-categoria="chaquetas-mujer">
           <div class="img-placeholder">
-            <img src="../img/Chaquetas/mujer/chaqueta3.jpg" alt="Chaqueta" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Chaquetas/mujer/chaqueta3.jpg" alt="Chaqueta" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Chaqueta Modelo 8</h3>
@@ -407,7 +410,7 @@
 
         <div class="producto" data-categoria="chaquetas-mujer">
           <div class="img-placeholder">
-            <img src="../img/Chaquetas/mujer/chaqueta4.jpg" alt="Chaqueta" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Chaquetas/mujer/chaqueta4.jpg" alt="Chaqueta" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Chaqueta Modelo 9</h3>
@@ -419,7 +422,7 @@
 
         <div class="producto" data-categoria="chaquetas-mujer">
           <div class="img-placeholder">
-            <img src="../img/Chaquetas/mujer/chaqueta5.jpg" alt="Chaqueta" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Chaquetas/mujer/chaqueta5.jpg" alt="Chaqueta" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Chaqueta Modelo 10</h3>
@@ -432,7 +435,7 @@
         <!-- Faldas -->
         <div class="producto" data-categoria="faldas">
           <div class="img-placeholder">
-            <img src="../img/faldas/falda1.jpg" alt="Falda" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/faldas/falda1.jpg" alt="Falda" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Falda Modelo 1</h3>
@@ -444,7 +447,7 @@
 
         <div class="producto" data-categoria="faldas">
           <div class="img-placeholder">
-            <img src="../img/faldas/falda2.jpg" alt="Falda" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/faldas/falda2.jpg" alt="Falda" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Falda Modelo 2</h3>
@@ -456,7 +459,7 @@
 
         <div class="producto" data-categoria="faldas">
           <div class="img-placeholder">
-            <img src="../img/faldas/falda3.jpg" alt="Falda" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/faldas/falda3.jpg" alt="Falda" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Falda Modelo 3</h3>
@@ -468,7 +471,7 @@
 
         <div class="producto" data-categoria="faldas">
           <div class="img-placeholder">
-            <img src="../img/faldas/falda4.jpg" alt="Falda" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/faldas/falda4.jpg" alt="Falda" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Falda Modelo 4</h3>
@@ -480,7 +483,7 @@
 
         <div class="producto" data-categoria="faldas">
           <div class="img-placeholder">
-            <img src="../img/faldas/falda5.jpg" alt="Falda" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/faldas/falda5.jpg" alt="Falda" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Falda Modelo 5</h3>
@@ -492,7 +495,7 @@
 
         <div class="producto" data-categoria="faldas">
           <div class="img-placeholder">
-            <img src="../img/faldas/falda6.jpg" alt="Falda" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/faldas/falda6.jpg" alt="Falda" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Falda Modelo 6</h3>
@@ -504,7 +507,7 @@
 
         <div class="producto" data-categoria="faldas">
           <div class="img-placeholder">
-            <img src=".../img/faldas/falda7.jpg" alt="Falda" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="./img/faldas/falda7.jpg" alt="Falda" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Falda Modelo 7</h3>
@@ -516,7 +519,7 @@
 
         <div class="producto" data-categoria="faldas">
           <div class="img-placeholder">
-            <img src="../img/faldas/falda8.jpg" alt="Falda" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/faldas/falda8.jpg" alt="Falda" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Falda Modelo 8</h3>
@@ -528,7 +531,7 @@
 
         <div class="producto" data-categoria="faldas">
           <div class="img-placeholder">
-            <img src="../img/faldas/falda9.jpg" alt="Falda" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/faldas/falda9.jpg" alt="Falda" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Falda Modelo 9</h3>
@@ -540,7 +543,7 @@
 
         <div class="producto" data-categoria="faldas">
           <div class="img-placeholder">
-            <img src="../img/faldas/falda10.jpg" alt="Falda" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/faldas/falda10.jpg" alt="Falda" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Falda Modelo 10</h3>
@@ -553,7 +556,7 @@
         <!-- Blusas -->
         <div class="producto" data-categoria="blusas">
           <div class="img-placeholder">
-            <img src="../img/Blusas/blusa1.jpg" alt="Blusa Elegante" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Blusas/blusa1.jpg" alt="Blusa Elegante" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Blusa Elegante</h3>
@@ -565,7 +568,7 @@
 
         <div class="producto" data-categoria="blusas">
           <div class="img-placeholder">
-            <img src="../img/Blusas/blusa2.jpg" alt="Blusa Casual" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Blusas/blusa2.jpg" alt="Blusa Casual" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Blusa Casual</h3>
@@ -577,7 +580,7 @@
 
         <div class="producto" data-categoria="blusas">
           <div class="img-placeholder">
-            <img src="../img/Blusas/blusa3.jpg" alt="Blusa Estampada" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Blusas/blusa3.jpg" alt="Blusa Estampada" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Blusa Estampada</h3>
@@ -589,7 +592,7 @@
 
         <div class="producto" data-categoria="blusas">
           <div class="img-placeholder">
-            <img src="../img/Blusas/blusa4.jpg" alt="Blusa Formal" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Blusas/blusa4.jpg" alt="Blusa Formal" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Blusa Formal</h3>
@@ -601,7 +604,7 @@
 
         <div class="producto" data-categoria="blusas">
           <div class="img-placeholder">
-            <img src="../img/Blusas/blusa5.jpg" alt="Blusa de Seda" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Blusas/blusa5.jpg" alt="Blusa de Seda" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Blusa de Seda</h3>
@@ -613,7 +616,7 @@
 
         <div class="producto" data-categoria="blusas">
           <div class="img-placeholder">
-            <img src="../img/Blusas/blusa6.jpg" alt="Blusa Casual Verano" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Blusas/blusa6.jpg" alt="Blusa Casual Verano" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Blusa Casual Verano</h3>
@@ -625,7 +628,7 @@
 
         <div class="producto" data-categoria="blusas">
           <div class="img-placeholder">
-            <img src="../img/Blusas/blusa7.jpg" alt="Blusa con Encaje" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Blusas/blusa7.jpg" alt="Blusa con Encaje" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Blusa con Encaje</h3>
@@ -637,7 +640,7 @@
 
         <div class="producto" data-categoria="blusas">
           <div class="img-placeholder">
-            <img src="../img/Blusas/blusa8.jpg" alt="Blusa de Algodón" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Blusas/blusa8.jpg" alt="Blusa de Algodón" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Blusa de Algodón</h3>
@@ -649,7 +652,7 @@
 
         <div class="producto" data-categoria="blusas">
           <div class="img-placeholder">
-            <img src="../img/Blusas/blusa9.jpg" alt="Blusa Floral" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Blusas/blusa9.jpg" alt="Blusa Floral" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Blusa Floral</h3>
@@ -661,7 +664,7 @@
 
         <div class="producto" data-categoria="blusas">
           <div class="img-placeholder">
-            <img src="../img/Blusas/blusa10.jpg" alt="Blusa de Manga Larga" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/Blusas/blusa10.jpg" alt="Blusa de Manga Larga" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Blusa de Manga Larga</h3>

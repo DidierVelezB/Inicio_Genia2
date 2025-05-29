@@ -1,4 +1,5 @@
 <?php
+session_start();
 if ($_FILES['foto']['error'] === 0) {
     $directorio = "uploads/";
 
