@@ -27,6 +27,14 @@ header {
   box-sizing: border-box;
    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+.saludo-usuario {
+  color: #002d2b;     
+  font-weight: bold;     
+  font-size: 18px;      
+  font-family: 'Arial', sans-serif;
+  margin: 10px 0;
+  position: absolute;
+}
 
 .nav-left, .nav-right {
   display: flex;

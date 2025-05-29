@@ -25,6 +25,7 @@
 
             <button name="button" type="submit">INICIAR SESIÓN</button>
             <button name="Registrar" type="button" onclick="window.location.href='../Registro/index.php'">REGISTRAR</button>
+        
         </form>
     </div>
 </body>

@@ -56,9 +56,15 @@ if (isset($_SESSION['usuario_id'])) {
                 <input type="text" name="documento" required>
 
                 <label>FECHA</label>
-                <input type="date" name="fecha" required>
+                <input type="date" name="fecha" required value="<?php echo date('Y-m-d'); ?>" readonly>
             </div>
 
             <div class="form-columna">
-                <label class="linReporte">LINEA DE REPORTE</label>
-                <textarea name="reporte" r
+                <label class="linReporte">LINEA DE REPORTE</label>            
+                <textarea name="reporte" required></textarea>                
+                <button type="submit">ENVIAR</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
