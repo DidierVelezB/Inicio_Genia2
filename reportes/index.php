@@ -1,3 +1,25 @@
+<?php
+session_start();
+date_default_timezone_set('America/Bogota');
+
+// Buscar imagen de perfil según ID del usuario
+$avatar = '../perfil/uploads/default.jpg'; // Ruta por defecto
+
+if (isset($_SESSION['usuario_id'])) {
+    $usuario_id = $_SESSION['usuario_id'];
+    $carpeta = '../perfil/uploads/';
+    $exts = ['jpg', 'jpeg', 'png', 'gif', 'webp'];
+
+    foreach ($exts as $ext) {
+        $ruta = $carpeta . $usuario_id . '.' . $ext;
+        if (file_exists($ruta)) {
+            $avatar = $ruta . '?ts=' . time(); 
+            break;
+        }
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -12,20 +34,17 @@
         <header>
             <div class="home-button">
                 <a href="../ropa_venta/index.php" class="home-link">    
-                <i class="fa-solid fa-house-chimney"></i>
-            <span class="">HOME</span>
-            </a> 
-        </div>
+                    <i class="fa-solid fa-house-chimney"></i>
+                    <span class="">HOME</span>
+                </a> 
+            </div>
             <h1>REPORTES</h1>
         </header>
 
         <form action="procesar.php" method="POST" class="formulario">
             <div class="form-columna">
                 <div class="imagen-perfil">
-                    <img src="<?= isset($_COOKIE['foto_usuario']) 
-                        ? '../perfil/' . $_COOKIE['foto_usuario'] . '?ts=' . time()
-                        : '../perfil/uploads/default.jpg' ?>" 
-                    alt="Usuario">
+                    <img src="<?= $avatar ?>" alt="Usuario">
                 </div>
                 <label>NOMBRES</label>
                 <input type="text" name="nombres" required>
@@ -42,10 +61,4 @@
 
             <div class="form-columna">
                 <label class="linReporte">LINEA DE REPORTE</label>
-                <textarea name="reporte" required></textarea>
-                <button type="submit">ENVIAR</button>
-            </div>
-        </form>
-    </div>
-</body>
-</html>
+                <textarea name="reporte" r

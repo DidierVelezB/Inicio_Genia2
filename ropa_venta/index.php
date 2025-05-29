@@ -108,10 +108,10 @@ session_start();
             <img src="/img/Camisas/hombre/Camisa4.jpg" alt="Camisa" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
-            <h3>Camiseta Modelo 4</h3>
+            <h3>Camiseta Gato</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$39.000</p>
-            <button class="btn-add" data-id="4" data-nombre="Camiseta Modelo 4" data-precio="39000">Añadir al carrito</button>
+            <button class="btn-add" data-id="4" data-nombre="Camiseta Gato" data-precio="39000">Añadir al carrito</button>
           </div>
         </div>
 
@@ -120,10 +120,10 @@ session_start();
             <img src="/img/Camisas/hombre/Camisa5.jpg" alt="Camisa" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
-            <h3>Camiseta Modelo 5</h3>
+            <h3>Camiseta Clasic</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$40.000</p>
-            <button class="btn-add" data-id="5" data-nombre="Camiseta Modelo 5" data-precio="40000">Añadir al carrito</button>
+            <button class="btn-add" data-id="5" data-nombre="Camiseta Clasic" data-precio="40000">Añadir al carrito</button>
           </div>
         </div>
       <!--Camisas mujer -->
@@ -132,10 +132,10 @@ session_start();
             <img src="/img/Camisas/mujer/Camisa1.jpg" alt="Camisa" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
-            <h3>Camiseta Modelo 6</h3>
+            <h3>Camiseta Happy</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$41.000</p>
-            <button class="btn-add" data-id="6" data-nombre="Camiseta Modelo 6" data-precio="41000">Añadir al carrito</button>
+            <button class="btn-add" data-id="6" data-nombre="Camiseta Happy" data-precio="41000">Añadir al carrito</button>
           </div>
         </div>
 
@@ -144,10 +144,10 @@ session_start();
             <img src="/img/Camisas/mujer/Camisa2.jpg" alt="Camisa" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
-            <h3>Camiseta Modelo 7</h3>
+            <h3>Camiseta Roja</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$42.000</p>
-            <button class="btn-add" data-id="7" data-nombre="Camiseta Modelo 7" data-precio="42000">Añadir al carrito</button>
+            <button class="btn-add" data-id="7" data-nombre="Camiseta Roja" data-precio="42000">Añadir al carrito</button>
           </div>
         </div>
 
@@ -156,10 +156,10 @@ session_start();
             <img src="/img/Camisas/mujer/Camisa3.jpg" alt="Camisa" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
-            <h3>Camiseta Modelo 8</h3>
+            <h3>Camiseta Soft</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$43.000</p>
-            <button class="btn-add" data-id="8" data-nombre="Camiseta Modelo 8" data-precio="43000">Añadir al carrito</button>
+            <button class="btn-add" data-id="8" data-nombre="Camiseta Soft" data-precio="43000">Añadir al carrito</button>
           </div>
         </div>
 
@@ -168,10 +168,10 @@ session_start();
             <img src="/img/Camisas/mujer/Camisa4.jpg" alt="Camisa" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
-            <h3>Camiseta Modelo 9</h3>
+            <h3>Camiseta Vogue</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$44.000</p>
-            <button class="btn-add" data-id="9" data-nombre="Camiseta Modelo 9" data-precio="44000">Añadir al carrito</button>
+            <button class="btn-add" data-id="9" data-nombre="Camiseta Vogue" data-precio="44000">Añadir al carrito</button>
           </div>
         </div>
 
@@ -180,10 +180,10 @@ session_start();
             <img src="/img/Camisas/mujer/Camisa5.jpg" alt="Camisa" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
-            <h3>Camiseta Modelo 10</h3>
+            <h3>Camiseta Palma</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$45.000</p>
-            <button class="btn-add" data-id="10" data-nombre="Camiseta Modelo 10" data-precio="45000">Añadir al carrito</button>
+            <button class="btn-add" data-id="10" data-nombre="Camiseta Palma" data-precio="45000">Añadir al carrito</button>
           </div>
         </div>
 
@@ -194,10 +194,10 @@ session_start();
             <img src="/img/Pantalones/hombre/pantalon1.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
-            <h3>Pantalón Modelo 1</h3>
+            <h3>Pantalón Elegante</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$60.000</p>
-            <button class="btn-add" data-id="11" data-nombre="Pantalón Modelo 1" data-precio="60000">Añadir al carrito</button>
+            <button class="btn-add" data-id="11" data-nombre="Pantalón Elegante" data-precio="60000">Añadir al carrito</button>
           </div>
         </div>
 
@@ -206,10 +206,10 @@ session_start();
             <img src="/img/Pantalones/hombre/pantalon2.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
-            <h3>Pantalón Modelo 2</h3>
+            <h3>Pantalón White</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$61.000</p>
-            <button class="btn-add" data-id="12" data-nombre="Pantalón Modelo 2" data-precio="61000">Añadir al carrito</button>
+            <button class="btn-add" data-id="12" data-nombre="Pantalón White" data-precio="61000">Añadir al carrito</button>
           </div>
         </div>
 
@@ -218,10 +218,10 @@ session_start();
             <img src="/img/Pantalones/hombre/pantalon3.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
-            <h3>Pantalón Modelo 3</h3>
+            <h3>Jean</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$62.000</p>
-            <button class="btn-add" data-id="13" data-nombre="Pantalón Modelo 3" data-precio="62000">Añadir al carrito</button>
+            <button class="btn-add" data-id="13" data-nombre="Jean" data-precio="62000">Añadir al carrito</button>
           </div>
         </div>
 
@@ -230,10 +230,10 @@ session_start();
             <img src="/img/Pantalones/hombre/pantalon4.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
-            <h3>Pantalón Modelo 4</h3>
+            <h3>Pantalon Jogger</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$63.000</p>
-            <button class="btn-add" data-id="14" data-nombre="Pantalón Modelo 4" data-precio="63000">Añadir al carrito</button>
+            <button class="btn-add" data-id="14" data-nombre="Pantalon Jogger" data-precio="63000">Añadir al carrito</button>
           </div>
         </div>
 
@@ -242,10 +242,10 @@ session_start();
             <img src="/img/Pantalones/hombre/pantalon5.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
-            <h3>Pantalón Modelo 5</h3>
+            <h3>Pantalón Safari</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$64.000</p>
-            <button class="btn-add" data-id="15" data-nombre="Pantalón Modelo 5" data-precio="64000">Añadir al carrito</button>
+            <button class="btn-add" data-id="15" data-nombre="Pantalón Safari" data-precio="64000">Añadir al carrito</button>
           </div>
         </div>
             <!--Mujer -->
@@ -254,10 +254,10 @@ session_start();
             <img src="/img/Pantalones/mujer/pantalon1.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
-            <h3>Pantalón Modelo 6</h3>
+            <h3>Pantalón Jogger</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$65.000</p>
-            <button class="btn-add" data-id="16" data-nombre="Pantalón Modelo 6" data-precio="65000">Añadir al carrito</button>
+            <button class="btn-add" data-id="16" data-nombre="Pantalón Jogger" data-precio="65000">Añadir al carrito</button>
           </div>
         </div>
 
@@ -266,10 +266,10 @@ session_start();
             <img src="/img/Pantalones/mujer/pantalon2.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
-            <h3>Pantalón Modelo 7</h3>
+            <h3>Pantalón negro</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$66.000</p>
-            <button class="btn-add" data-id="17" data-nombre="Pantalón Modelo 7" data-precio="66000">Añadir al carrito</button>
+            <button class="btn-add" data-id="17" data-nombre="Pantalón negro" data-precio="66000">Añadir al carrito</button>
           </div>
         </div>
 
@@ -278,10 +278,10 @@ session_start();
             <img src="/img/Pantalones/mujer/pantalon3.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
-            <h3>Pantalón Modelo 8</h3>
+            <h3>Pantalón Jogger Gris</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$67.000</p>
-            <button class="btn-add" data-id="18" data-nombre="Pantalón Modelo 8" data-precio="67000">Añadir al carrito</button>
+            <button class="btn-add" data-id="18" data-nombre="Pantalón Jogger Gris" data-precio="67000">Añadir al carrito</button>
           </div>
         </div>
 
@@ -290,10 +290,10 @@ session_start();
             <img src="/img/Pantalones/mujer/pantalon4.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
-            <h3>Pantalón Modelo 9</h3>
+            <h3>Jean Overzise</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$68.000</p>
-            <button class="btn-add" data-id="19" data-nombre="Pantalón Modelo 9" data-precio="68000">Añadir al carrito</button>
+            <button class="btn-add" data-id="19" data-nombre="Jean Overzise" data-precio="68000">Añadir al carrito</button>
           </div>
         </div>
 
@@ -302,10 +302,10 @@ session_start();
             <img src="/img/Pantalones/mujer/pantalon5.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
-            <h3>Pantalón Modelo 10</h3>
+            <h3>Pantalón A rallas</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$69.000</p>
-            <button class="btn-add" data-id="20" data-nombre="Pantalón Modelo 10" data-precio="69000">Añadir al carrito</button>
+            <button class="btn-add" data-id="20" data-nombre="Pantalón A rallas" data-precio="69000">Añadir al carrito</button>
           </div>
         </div>
 
@@ -316,10 +316,10 @@ session_start();
             <img src="/img/Chaquetas/hombre/chaqueta1.jpg" alt="Chaqueta" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
-            <h3>Chaqueta Modelo 1</h3>
+            <h3>CChaqueta Cuero</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$80.000</p>
-            <button class="btn-add" data-id="21" data-nombre="Chaqueta Modelo 1" data-precio="80000">Añadir al carrito</button>
+            <button class="btn-add" data-id="21" data-nombre="Chaqueta Cuero" data-precio="80000">Añadir al carrito</button>
           </div>
         </div>
 
@@ -328,10 +328,10 @@ session_start();
             <img src="/img/Chaquetas/hombre/chaqueta2.jpg" alt="Chaqueta" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
-            <h3>Chaqueta Modelo 2</h3>
+            <h3>Chaqueta Biker</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$81.000</p>
-            <button class="btn-add" data-id="22" data-nombre="Chaqueta Modelo 2" data-precio="81000">Añadir al carrito</button>
+            <button class="btn-add" data-id="22" data-nombre="Chaqueta Biker" data-precio="81000">Añadir al carrito</button>
           </div>
         </div>
 
@@ -340,10 +340,10 @@ session_start();
             <img src="/img/Chaquetas/hombre/chaqueta3.jpg" alt="Chaqueta" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
-            <h3>Chaqueta Modelo 3</h3>
+            <h3>Chaqueta Elegante</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$82.000</p>
-            <button class="btn-add" data-id="23" data-nombre="Chaqueta Modelo 3" data-precio="82000">Añadir al carrito</button>
+            <button class="btn-add" data-id="23" data-nombre="Chaqueta Elegante" data-precio="82000">Añadir al carrito</button>
           </div>
         </div>
 
@@ -352,10 +352,10 @@ session_start();
             <img src="/img/Chaquetas/hombre/chaqueta4.jpg" alt="Chaqueta" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
-            <h3>Chaqueta Modelo 4</h3>
+            <h3>Chaqueta overzise</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$83.000</p>
-            <button class="btn-add" data-id="24" data-nombre="Chaqueta Modelo 4" data-precio="83000">Añadir al carrito</button>
+            <button class="btn-add" data-id="24" data-nombre="Chaqueta overzise" data-precio="83000">Añadir al carrito</button>
           </div>
         </div>
  
@@ -367,7 +367,7 @@ session_start();
             <h3>Chaqueta Modelo 5</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$84.000</p>
-            <button class="btn-add" data-id="25" data-nombre="Chaqueta Modelo 5" data-precio="84000">Añadir al carrito</button>
+            <button class="btn-add" data-id="25" data-nombre="Chaqueta WDogs" data-precio="84000">Añadir al carrito</button>
           </div>
         </div>
         
@@ -380,7 +380,7 @@ session_start();
             <h3>Chaqueta Modelo 6</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$85.000</p>
-            <button class="btn-add" data-id="26" data-nombre="Chaqueta Modelo 6" data-precio="85000">Añadir al carrito</button>
+            <button class="btn-add" data-id="26" data-nombre="Chaqueta Invierno" data-precio="85000">Añadir al carrito</button>
           </div>
         </div>
 
@@ -392,7 +392,7 @@ session_start();
             <h3>Chaqueta Modelo 7</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$86.000</p>
-            <button class="btn-add" data-id="27" data-nombre="Chaqueta Modelo 7" data-precio="86000">Añadir al carrito</button>
+            <button class="btn-add" data-id="27" data-nombre="Chaqueta Roja" data-precio="86000">Añadir al carrito</button>
           </div>
         </div>
 
@@ -404,7 +404,7 @@ session_start();
             <h3>Chaqueta Modelo 8</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$87.000</p>
-            <button class="btn-add" data-id="28" data-nombre="Chaqueta Modelo 8" data-precio="87000">Añadir al carrito</button>
+            <button class="btn-add" data-id="28" data-nombre="Chaqueta Rosa" data-precio="87000">Añadir al carrito</button>
           </div>
         </div>
 
@@ -416,7 +416,7 @@ session_start();
             <h3>Chaqueta Modelo 9</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$88.000</p>
-            <button class="btn-add" data-id="29" data-nombre="Chaqueta Modelo 9" data-precio="88000">Añadir al carrito</button>
+            <button class="btn-add" data-id="29" data-nombre="Chaqueta Urban" data-precio="88000">Añadir al carrito</button>
           </div>
         </div>
 
@@ -428,7 +428,7 @@ session_start();
             <h3>Chaqueta Modelo 10</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$89.000</p>
-            <button class="btn-add" data-id="30" data-nombre="Chaqueta Modelo 10" data-precio="89000">Añadir al carrito</button>
+            <button class="btn-add" data-id="30" data-nombre="Chaqueta Agatha" data-precio="89000">Añadir al carrito</button>
           </div>
         </div>
 
@@ -441,7 +441,7 @@ session_start();
             <h3>Falda Modelo 1</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$45.000</p>
-            <button class="btn-add" data-id="31" data-nombre="Falda Modelo 1" data-precio="45000">Añadir al carrito</button>
+            <button class="btn-add" data-id="31" data-nombre="Falda negro" data-precio="45000">Añadir al carrito</button>
           </div>
         </div>
 
@@ -453,7 +453,7 @@ session_start();
             <h3>Falda Modelo 2</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$46.000</p>
-            <button class="btn-add" data-id="32" data-nombre="Falda Modelo 2" data-precio="46000">Añadir al carrito</button>
+            <button class="btn-add" data-id="32" data-nombre="Falda Jean" data-precio="46000">Añadir al carrito</button>
           </div>
         </div>
 
@@ -465,7 +465,7 @@ session_start();
             <h3>Falda Modelo 3</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$47.000</p>
-            <button class="btn-add" data-id="33" data-nombre="Falda Modelo 3" data-precio="47000">Añadir al carrito</button>
+            <button class="btn-add" data-id="33" data-nombre="Falda Verano" data-precio="47000">Añadir al carrito</button>
           </div>
         </div>
 
@@ -477,7 +477,7 @@ session_start();
             <h3>Falda Modelo 4</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$48.000</p>
-            <button class="btn-add" data-id="34" data-nombre="Falda Modelo 4" data-precio="48000">Añadir al carrito</button>
+            <button class="btn-add" data-id="34" data-nombre="Falda Perlado" data-precio="48000">Añadir al carrito</button>
           </div>
         </div>
 
@@ -489,7 +489,7 @@ session_start();
             <h3>Falda Modelo 5</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$49.000</p>
-            <button class="btn-add" data-id="35" data-nombre="Falda Modelo 5" data-precio="49000">Añadir al carrito</button>
+            <button class="btn-add" data-id="35" data-nombre="Falda Dyson" data-precio="49000">Añadir al carrito</button>
           </div>
         </div>
 
@@ -501,19 +501,19 @@ session_start();
             <h3>Falda Modelo 6</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$50.000</p>
-            <button class="btn-add" data-id="36" data-nombre="Falda Modelo 6" data-precio="50000">Añadir al carrito</button>
+            <button class="btn-add" data-id="36" data-nombre="Falda White" data-precio="50000">Añadir al carrito</button>
           </div>
         </div>
 
         <div class="producto" data-categoria="faldas">
           <div class="img-placeholder">
-            <img src="./img/faldas/falda7.jpg" alt="Falda" style="width: 200px; height: 200px; object-fit: cover;">
+            <img src="/img/faldas/falda7.jpg" alt="Falda" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
             <h3>Falda Modelo 7</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$51.000</p>
-            <button class="btn-add" data-id="37" data-nombre="Falda Modelo 7" data-precio="51000">Añadir al carrito</button>
+            <button class="btn-add" data-id="37" data-nombre="Falda Tros" data-precio="51000">Añadir al carrito</button>
           </div>
         </div>
 
@@ -525,7 +525,7 @@ session_start();
             <h3>Falda Modelo 8</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$52.000</p>
-            <button class="btn-add" data-id="38" data-nombre="Falda Modelo 8" data-precio="52000">Añadir al carrito</button>
+            <button class="btn-add" data-id="38" data-nombre="Falda larga" data-precio="52000">Añadir al carrito</button>
           </div>
         </div>
 
@@ -537,7 +537,7 @@ session_start();
             <h3>Falda Modelo 9</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$53.000</p>
-            <button class="btn-add" data-id="39" data-nombre="Falda Modelo 9" data-precio="53000">Añadir al carrito</button>
+            <button class="btn-add" data-id="39" data-nombre="Falda Rosita" data-precio="53000">Añadir al carrito</button>
           </div>
         </div>
 
@@ -549,7 +549,7 @@ session_start();
             <h3>Falda Modelo 10</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$54.000</p>
-            <button class="btn-add" data-id="40" data-nombre="Falda Modelo 10" data-precio="54000">Añadir al carrito</button>
+            <button class="btn-add" data-id="40" data-nombre="Falda Solari" data-precio="54000">Añadir al carrito</button>
           </div>
         </div>
 
@@ -562,7 +562,7 @@ session_start();
             <h3>Blusa Elegante</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$52.000</p>
-            <button class="btn-add" data-id="41" data-nombre="Blusa Elegante" data-precio="52000">Añadir al carrito</button>
+            <button class="btn-add" data-id="41" data-nombre="Blusa blanca" data-precio="52000">Añadir al carrito</button>
           </div>
         </div>
 
@@ -598,7 +598,7 @@ session_start();
             <h3>Blusa Formal</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$55.000</p>
-            <button class="btn-add" data-id="44" data-nombre="Blusa Formal" data-precio="55000">Añadir al carrito</button>
+            <button class="btn-add" data-id="44" data-nombre="Blusa Dar" data-precio="55000">Añadir al carrito</button>
           </div>
         </div>
 

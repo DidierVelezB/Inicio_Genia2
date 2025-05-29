@@ -24,9 +24,26 @@ date_default_timezone_set('America/Bogota');
     <div class="container">
         <div class="perfil">
             <div class="avatar">
+                <?php
+                $avatar = 'https://via.placeholder.com/100x100?text=?';
+
+                if (isset($_SESSION['usuario_id'])) {
+                    $usuario_id = $_SESSION['usuario_id'];
+                    $carpeta = "uploads/";
+                    $exts = ['jpg', 'jpeg', 'png', 'gif', 'webp'];
+
+                    foreach ($exts as $ext) {
+                        $ruta = $carpeta . $usuario_id . '.' . $ext;
+                        if (file_exists($ruta)) {
+                            $avatar = $ruta . '?t=' . time(); // fuerza actualización de caché
+                            break;
+                        }
+                    }
+                }
+                ?>
                 <form action="subir_foto.php" method="POST" enctype="multipart/form-data">
                     <label for="fotoInput">
-                        <img src="<?php echo isset($_COOKIE['foto_usuario']) ? $_COOKIE['foto_usuario'] . '?ts=' . time() : 'https://via.placeholder.com/100x100?text=?'; ?>" alt="Usuario" id="avatarImg">
+                        <img src="<?php echo $avatar; ?>" alt="Usuario" id="avatarImg">
                     </label>
                     <input type="file" name="foto" id="fotoInput" accept="image/*" onchange="this.form.submit()">
                 </form>

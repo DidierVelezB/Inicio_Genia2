@@ -1,29 +1,39 @@
 <?php
-session_start(); 
+session_start();
 
+if (!isset($_SESSION['usuario_id'])) {
+    die("No hay sesión iniciada.");
+}
 
 if ($_FILES['foto']['error'] === 0) {
+    $usuario_id = $_SESSION['usuario_id'];
     $directorio = "uploads/";
 
-    // Crear el directorio si no existe
     if (!is_dir($directorio)) {
         mkdir($directorio, 0777, true);
     }
 
-    // Obtener nombre original y construir ruta
-    $nombreArchivoOriginal = basename($_FILES["foto"]["name"]);
-    $rutaDestino = $directorio . $nombreArchivoOriginal;
+    // Aseguramos que sea imagen válida
+    $info = pathinfo($_FILES['foto']['name']);
+    $extension = strtolower($info['extension']);
+    $extensionesPermitidas = ['jpg', 'jpeg', 'png', 'gif', 'webp'];
 
-    // Si ya existe una imagen con ese nombre, la reemplaza
-    if (file_exists($rutaDestino)) {
-        unlink($rutaDestino);
+    if (!in_array($extension, $extensionesPermitidas)) {
+        die("Extensión de imagen no permitida.");
     }
 
-    // Mover la nueva imagen al destino
+    $nombreArchivo = $usuario_id . '.' . $extension;
+    $rutaDestino = $directorio . $nombreArchivo;
+
+    // Elimina otras versiones del mismo usuario
+    foreach ($extensionesPermitidas as $ext) {
+        $viejo = $directorio . $usuario_id . '.' . $ext;
+        if (file_exists($viejo)) {
+            unlink($viejo);
+        }
+    }
+
     if (move_uploaded_file($_FILES["foto"]["tmp_name"], $rutaDestino)) {
-        // Guardar la ruta en una cookie por 30 días
-        setcookie("foto_usuario", $rutaDestino, time() + (86400 * 30), "/");
-        // Redirigir para actualizar la vista
         header("Location: index.php");
         exit;
     } else {
