@@ -1,7 +1,7 @@
 <?php 
 session_start();
 
-if($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["usuario"]) || empty($_POST["contraseña"])) {
         echo '<div class="alert alert-danger">LOS CAMPOS ESTÁN VACÍOS</div>';
     } else {
@@ -10,8 +10,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         $nombre = trim($_POST["usuario"]);
         $contraseña = trim($_POST["contraseña"]);
 
-        // Consulta preparada para mayor seguridad
-        $stmt = $conexion->prepare("SELECT idCliente, nombre, contraseña FROM cliente WHERE nombre = ?");
+        $stmt = $conexion->prepare("SELECT idCliente, nombre, contraseña, rol FROM cliente WHERE nombre = ?");
         $stmt->bind_param("s", $nombre);
         $stmt->execute();
         $resultado = $stmt->get_result();
@@ -20,7 +19,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
             if (password_verify($contraseña, $datos->contraseña)) {
                 $_SESSION['usuario_id'] = $datos->idCliente;
                 $_SESSION['usuario'] = $datos->nombre;
-                header("Location: ../ropa_venta/index.php");  
+
+                if ($datos->rol === 'administrador') {
+                    header("Location: ../carrito_venta/administracion.php"); // Redirige al admin
+                } else {
+                    header("Location: ../ropa_venta/index.php"); // Redirige a usuario normal
+                }
                 exit;
             } else {
                 echo '<div class="alert alert-danger">ACCESO DENEGADO</div>';
@@ -32,5 +36,5 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->close();
         $conexion->close();
     }
-} 
+}
 ?>
