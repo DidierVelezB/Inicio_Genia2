@@ -319,7 +319,7 @@ session_start();
             <img src="/img/Chaquetas/hombre/chaqueta1.jpg" alt="Chaqueta" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
           <div class="info">
-            <h3>CChaqueta Cuero</h3>
+            <h3>Chaqueta Cuero</h3>
             <p>Tallas: S, M, L</p>
             <p class="precio">$80.000</p>
             <button class="btn-add" data-id="21" data-nombre="Chaqueta Cuero" data-precio="80000">Añadir al carrito</button>
