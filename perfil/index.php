@@ -105,9 +105,7 @@ date_default_timezone_set('America/Bogota');
                             echo "<strong>Producto:</strong> " . htmlspecialchars($fila['producto']) . "<br>";
                             echo "<strong>Talla:</strong> " . htmlspecialchars($fila['talla']) . "<br>";
                             echo "<strong>Precio:</strong> $" . number_format($fila['precio'], 0, ',', '.') . "<br>";
-                            echo "<strong>Fecha:</strong> " . (new DateTime($fila['fecha'], new DateTimeZone('UTC')))
-                            ->setTimezone(new DateTimeZone('America/Bogota'))
-                            ->format('d/m/Y h:i:s ');
+                            echo "<strong>Fecha:</strong> <span class='hora-usuario' data-utc='" . htmlspecialchars($fila['fecha']) . "'></span>";
                             echo "</div>";
                             echo "</li>";
                         }
@@ -125,5 +123,28 @@ date_default_timezone_set('America/Bogota');
             ?>
         </div>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const elementos = document.querySelectorAll(".hora-usuario");
+
+            elementos.forEach(el => {
+                const utc = el.dataset.utc; // Fecha en UTC
+                const fecha = new Date(utc + " UTC"); // Forzar interpretación en UTC
+                fecha.setHours(fecha.getHours() - 2); // Ajustar a la zona horaria de Bogotá (UTC-5)
+
+                // Ajustar la fecha a la zona horaria local
+                const opciones = {
+                    year: "numeric",
+                    month: "2-digit",
+                    day: "2-digit",
+                    hour: "2-digit",
+                    minute: "2-digit",
+                    second: "2-digit",
+                };
+
+                el.textContent = fecha.toLocaleString(undefined, opciones); // Formato local
+            });
+        });
+</script>
 </body>
 </html>
