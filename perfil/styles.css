@@ -270,9 +270,9 @@ select[name="tipo_documento"] {
   list-style: none;
   padding: 0;
   margin: 0;
-  max-height: 680px;     /* Altura máxima para que no se extienda sin fin */
-  overflow-y: auto;      /* Scroll vertical cuando exceda esa altura */
-  border: 1px solid #ccc;  /* Opcional: para que se note el contenedor */
+  max-height: 680px;  
+  overflow-y: auto;      
+  border: 1px solid #ccc;  
   border-radius: 8px;
   background: #fafafa;
   box-shadow: inset 0 0 5px rgba(0,0,0,0.1)

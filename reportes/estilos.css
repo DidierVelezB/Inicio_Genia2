@@ -26,7 +26,7 @@ header {
     align-items: center;
     padding: 20px;
     border-bottom: 2px solid #333;
-    background-color: #fff;
+    background-color: #e6e6e6;
 }
 
 .logo {
@@ -92,7 +92,7 @@ h1 {
     flex-direction: column;
     border: 2px solid #333;
     padding: 20px;
-    background-color: #fff;
+    background-color: #e6e6e6;
     
 }.form-columna img {
     width: 100%;
