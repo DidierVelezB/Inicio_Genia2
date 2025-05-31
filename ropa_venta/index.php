@@ -19,7 +19,7 @@ session_start();
         <a href="#">Soporte Técnico</a>
       </div>
     </div>
-    <a href="#">Promociones</a>
+    <a href="../promociones/index.php">Promociones</a>
     <span class="saludo-usuario">
     <?php echo "¡Hola, " . $_SESSION['usuario'], '!'; ?>
     </span>
@@ -70,7 +70,7 @@ session_start();
 
     <section class="productos-grid">
       <!-- Camisas -->
-        <div class="producto"  data-categoria="camisas-hombre">
+        <div class="producto"  data-categoria="camisas-hombre" data-tipo="camisa" data-genero="hombre">
             <div class="img-placeholder">
                 <img src="/img/Camisas/hombre/Camisa1.jpg" alt="Camiseta" style="width: 200px; height: 200px; object-fit: cover;">
             </div>
@@ -82,7 +82,7 @@ session_start();
             </div>
         </div>
 
-        <div class="producto" data-categoria="camisas-hombre">
+        <div class="producto" data-categoria="camisas-hombre" data-tipo="camisa" data-genero="hombre">
             <div class="img-placeholder">
                 <img src="/img/Camisas/hombre/Camisa2.jpg" alt="Camiseta" style="width: 200px; height: 200px; object-fit: cover;">
             </div>
@@ -94,7 +94,7 @@ session_start();
             </div>
         </div>
 
-        <div class="producto" data-categoria="camisas-hombre">
+        <div class="producto" data-categoria="camisas-hombre" data-tipo="camisa" data-genero="hombre">
             <div class="img-placeholder">
                 <img src="/img/Camisas/hombre/Camisa3.jpg" alt="Camiseta" style="width: 200px; height: 200px; object-fit: cover;">
             </div>
@@ -106,7 +106,7 @@ session_start();
             </div>
         </div>
 
-        <div class="producto" data-categoria="camisas-hombre">
+        <div class="producto" data-categoria="camisas-hombre" data-tipo="camisa" data-genero="hombre">
           <div class="img-placeholder">
             <img src="/img/Camisas/hombre/Camisa4.jpg" alt="Camisa" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -118,7 +118,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="camisas-hombre">
+        <div class="producto" data-categoria="camisas-hombre" data-tipo="camisa" data-genero="hombre">
           <div class="img-placeholder">
             <img src="/img/Camisas/hombre/Camisa5.jpg" alt="Camisa" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -130,7 +130,7 @@ session_start();
           </div>
         </div>
       <!--Camisas mujer -->
-        <div class="producto" data-categoria="camisas-mujer">
+        <div class="producto" data-categoria="camisas-mujer" data-tipo="camisa" data-genero="mujer">
           <div class="img-placeholder">
             <img src="/img/Camisas/mujer/Camisa1.jpg" alt="Camisa" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -142,7 +142,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="camisas-mujer">
+        <div class="producto" data-categoria="camisas-mujer" data-tipo="camisa" data-genero="mujer">
           <div class="img-placeholder">
             <img src="/img/Camisas/mujer/Camisa2.jpg" alt="Camisa" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -154,7 +154,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="camisas-mujer">
+        <div class="producto" data-categoria="camisas-mujer" data-tipo="camisa" data-genero="mujer">
           <div class="img-placeholder">
             <img src="/img/Camisas/mujer/Camisa3.jpg" alt="Camisa" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -166,7 +166,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="camisas-mujer">
+        <div class="producto" data-categoria="camisas-mujer" data-tipo="camisa" data-genero="mujer">
           <div class="img-placeholder">
             <img src="/img/Camisas/mujer/Camisa4.jpg" alt="Camisa" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -178,7 +178,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="camisas-mujer">
+        <div class="producto" data-categoria="camisas-mujer" data-tipo="camisa" data-genero="mujer">
           <div class="img-placeholder">
             <img src="/img/Camisas/mujer/Camisa5.jpg" alt="Camisa" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -192,7 +192,7 @@ session_start();
 
         <!--Pantalones -->
           <!--Hombre -->
-        <div class="producto" data-categoria="pantalones-hombre">
+        <div class="producto" data-categoria="pantalones-hombre" data-tipo="pantalon" data-genero="hombre">
           <div class="img-placeholder">
             <img src="/img/Pantalones/hombre/pantalon1.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -204,7 +204,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="pantalones-hombre">
+        <div class="producto" data-categoria="pantalones-hombre" data-tipo="pantalon" data-genero="hombre">
           <div class="img-placeholder">
             <img src="/img/Pantalones/hombre/pantalon2.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -216,7 +216,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="pantalones-hombre">
+        <div class="producto" data-categoria="pantalones-hombre" data-tipo="pantalon" data-genero="hombre">
           <div class="img-placeholder">
             <img src="/img/Pantalones/hombre/pantalon3.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -228,7 +228,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="pantalones-hombre">
+        <div class="producto" data-categoria="pantalones-hombre" data-tipo="pantalon" data-genero="hombre">
           <div class="img-placeholder">
             <img src="/img/Pantalones/hombre/pantalon4.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -240,7 +240,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="pantalones-hombre">
+        <div class="producto" data-categoria="pantalones-hombre" data-tipo="pantalon" data-genero="hombre">
           <div class="img-placeholder">
             <img src="/img/Pantalones/hombre/pantalon5.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -252,7 +252,7 @@ session_start();
           </div>
         </div>
             <!--Mujer -->
-        <div class="producto" data-categoria="pantalones-mujer">
+        <div class="producto" data-categoria="pantalones-mujer" data-tipo="pantalon" data-genero="mujer">
           <div class="img-placeholder">
             <img src="/img/Pantalones/mujer/pantalon1.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -264,7 +264,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="pantalones-mujer">
+        <div class="producto" data-categoria="pantalones-mujer" data-tipo="pantalon" data-genero="mujer">
           <div class="img-placeholder">
             <img src="/img/Pantalones/mujer/pantalon2.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -276,7 +276,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="pantalones-mujer">
+        <div class="producto" data-categoria="pantalones-mujer" data-tipo="pantalon" data-genero="mujer">
           <div class="img-placeholder">
             <img src="/img/Pantalones/mujer/pantalon3.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -288,7 +288,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="pantalones-mujer">
+        <div class="producto" data-categoria="pantalones-mujer" data-tipo="pantalon" data-genero="mujer">
           <div class="img-placeholder">
             <img src="/img/Pantalones/mujer/pantalon4.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -300,7 +300,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="pantalones-mujer">
+        <div class="producto" data-categoria="pantalones-mujer" data-tipo="pantalon" data-genero="mujer">
           <div class="img-placeholder">
             <img src="/img/Pantalones/mujer/pantalon5.jpg" alt="Pantalón" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -314,7 +314,7 @@ session_start();
 
         <!--Chaquetas -->
           <!--Hombre -->
-        <div class="producto" data-categoria="chaquetas-hombre">
+        <div class="producto" data-categoria="chaquetas-hombre" data-tipo="chaqueta" data-genero="hombre">
           <div class="img-placeholder">
             <img src="/img/Chaquetas/hombre/chaqueta1.jpg" alt="Chaqueta" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -326,7 +326,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="chaquetas-hombre">
+        <div class="producto" data-categoria="chaquetas-hombre" data-tipo="chaqueta" data-genero="hombre">
           <div class="img-placeholder">
             <img src="/img/Chaquetas/hombre/chaqueta2.jpg" alt="Chaqueta" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -338,7 +338,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="chaquetas-hombre">
+        <div class="producto" data-categoria="chaquetas-hombre" data-tipo="chaqueta" data-genero="hombre">
           <div class="img-placeholder">
             <img src="/img/Chaquetas/hombre/chaqueta3.jpg" alt="Chaqueta" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -350,7 +350,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="chaquetas-hombre">
+        <div class="producto" data-categoria="chaquetas-hombre" data-tipo="chaqueta" data-genero="hombre">
           <div class="img-placeholder">
             <img src="/img/Chaquetas/hombre/chaqueta4.jpg" alt="Chaqueta" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -362,7 +362,7 @@ session_start();
           </div>
         </div>
  
-        <div class="producto" data-categoria="chaquetas-hombre">
+        <div class="producto" data-categoria="chaquetas-hombre" data-tipo="chaqueta" data-genero="hombre">
           <div class="img-placeholder">
             <img src="/img/Chaquetas/hombre/chaqueta5.jpg" alt="Chaqueta" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -375,7 +375,7 @@ session_start();
         </div>
         
           <!--Mujer -->
-        <div class="producto" data-categoria="chaquetas-mujer">
+        <div class="producto" data-categoria="chaquetas-mujer" data-tipo="chaqueta" data-genero="mujer">
           <div class="img-placeholder">
             <img src="/img/Chaquetas/mujer/chaqueta1.jpg" alt="Chaqueta" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -387,7 +387,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="chaquetas-mujer">
+        <div class="producto" data-categoria="chaquetas-mujer" data-tipo="chaqueta" data-genero="mujer">
           <div class="img-placeholder">
             <img src="/img/Chaquetas/mujer/chaqueta2.jpg" alt="Chaqueta" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -399,7 +399,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="chaquetas-mujer">
+        <div class="producto" data-categoria="chaquetas-mujer" data-tipo="chaqueta" data-genero="mujer">
           <div class="img-placeholder">
             <img src="/img/Chaquetas/mujer/chaqueta3.jpg" alt="Chaqueta" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -411,7 +411,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="chaquetas-mujer">
+        <div class="producto" data-categoria="chaquetas-mujer" data-tipo="chaqueta" data-genero="mujer">
           <div class="img-placeholder">
             <img src="/img/Chaquetas/mujer/chaqueta4.jpg" alt="Chaqueta" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -423,7 +423,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="chaquetas-mujer">
+        <div class="producto" data-categoria="chaquetas-mujer" data-tipo="chaqueta" data-genero="mujer">
           <div class="img-placeholder">
             <img src="/img/Chaquetas/mujer/chaqueta5.jpg" alt="Chaqueta" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -436,7 +436,7 @@ session_start();
         </div>
 
         <!-- Faldas -->
-        <div class="producto" data-categoria="faldas">
+        <div class="producto" data-categoria="faldas" data-tipo="falda" data-genero="mujer">
           <div class="img-placeholder">
             <img src="/img/faldas/falda1.jpg" alt="Falda" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -448,7 +448,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="faldas">
+        <div class="producto" data-categoria="faldas" data-tipo="falda" data-genero="mujer">
           <div class="img-placeholder">
             <img src="/img/faldas/falda2.jpg" alt="Falda" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -460,7 +460,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="faldas">
+        <div class="producto" data-categoria="faldas" data-tipo="falda" data-genero="mujer">
           <div class="img-placeholder">
             <img src="/img/faldas/falda3.jpg" alt="Falda" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -472,7 +472,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="faldas">
+        <div class="producto" data-categoria="faldas" data-tipo="falda"  data-genero="mujer">
           <div class="img-placeholder">
             <img src="/img/faldas/falda4.jpg" alt="Falda" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -484,7 +484,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="faldas">
+        <div class="producto" data-categoria="faldas" data-tipo="falda" data-genero="mujer">
           <div class="img-placeholder">
             <img src="/img/faldas/falda5.jpg" alt="Falda" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -496,7 +496,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="faldas">
+        <div class="producto" data-categoria="faldas" data-tipo="falda" data-genero="mujer">
           <div class="img-placeholder">
             <img src="/img/faldas/falda6.jpg" alt="Falda" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -508,7 +508,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="faldas">
+        <div class="producto" data-categoria="faldas" data-tipo="falda" data-genero="mujer">
           <div class="img-placeholder">
             <img src="/img/faldas/falda7.jpg" alt="Falda" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -520,7 +520,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="faldas">
+        <div class="producto" data-categoria="faldas" data-tipo="falda" data-genero="mujer">
           <div class="img-placeholder">
             <img src="/img/faldas/falda8.jpg" alt="Falda" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -532,7 +532,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="faldas">
+        <div class="producto" data-categoria="faldas" data-tipo="falda" data-genero="mujer">
           <div class="img-placeholder">
             <img src="/img/faldas/falda9.jpg" alt="Falda" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -544,7 +544,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="faldas">
+        <div class="producto" data-categoria="faldas" data-tipo="falda" data-genero="mujer">
           <div class="img-placeholder">
             <img src="/img/faldas/falda10.jpg" alt="Falda" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -557,7 +557,7 @@ session_start();
         </div>
 
         <!-- Blusas -->
-        <div class="producto" data-categoria="blusas">
+        <div class="producto" data-categoria="blusas" data-tipo="blusa" data-genero="mujer">
           <div class="img-placeholder">
             <img src="/img/Blusas/blusa1.jpg" alt="Blusa Elegante" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -569,7 +569,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="blusas">
+        <div class="producto" data-categoria="blusas" data-tipo="blusa" data-genero="mujer">
           <div class="img-placeholder">
             <img src="/img/Blusas/blusa2.jpg" alt="Blusa Casual" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -581,7 +581,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="blusas">
+        <div class="producto" data-categoria="blusas" data-tipo="blusa" data-genero="mujer">
           <div class="img-placeholder">
             <img src="/img/Blusas/blusa3.jpg" alt="Blusa Estampada" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -593,7 +593,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="blusas">
+        <div class="producto" data-categoria="blusas" data-tipo="blusa" data-genero="mujer">
           <div class="img-placeholder">
             <img src="/img/Blusas/blusa4.jpg" alt="Blusa Formal" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -605,7 +605,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="blusas">
+        <div class="producto" data-categoria="blusas" data-tipo="blusa" data-genero="mujer">
           <div class="img-placeholder">
             <img src="/img/Blusas/blusa5.jpg" alt="Blusa de Seda" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -617,7 +617,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="blusas">
+        <div class="producto" data-categoria="blusas" data-tipo="blusa" data-genero="mujer">
           <div class="img-placeholder">
             <img src="/img/Blusas/blusa6.jpg" alt="Blusa Casual Verano" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -629,7 +629,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="blusas">
+        <div class="producto" data-categoria="blusas" data-tipo="blusa" data-genero="mujer">
           <div class="img-placeholder">
             <img src="/img/Blusas/blusa7.jpg" alt="Blusa con Encaje" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -641,7 +641,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="blusas">
+        <div class="producto" data-categoria="blusas" data-tipo="blusa" data-genero="mujer">
           <div class="img-placeholder">
             <img src="/img/Blusas/blusa8.jpg" alt="Blusa de Algodón" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -653,7 +653,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="blusas">
+        <div class="producto" data-categoria="blusas" data-tipo="blusa" data-genero="mujer">
           <div class="img-placeholder">
             <img src="/img/Blusas/blusa9.jpg" alt="Blusa Floral" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
@@ -665,7 +665,7 @@ session_start();
           </div>
         </div>
 
-        <div class="producto" data-categoria="blusas">
+        <div class="producto" data-categoria="blusas" data-tipo="blusa" data-genero="mujer">
           <div class="img-placeholder">
             <img src="/img/Blusas/blusa10.jpg" alt="Blusa de Manga Larga" style="width: 200px; height: 200px; object-fit: cover;">
           </div>
