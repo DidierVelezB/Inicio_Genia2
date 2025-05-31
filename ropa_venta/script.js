@@ -13,10 +13,12 @@ document.querySelectorAll('.btn-add').forEach(btn => {
 
         let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
-        // Guardar también el historial de clics para promociones
+        // Guardar historial de clics (MODIFICACIÓN AQUÍ)
         let historial = JSON.parse(localStorage.getItem('productosClickeados')) || [];
-        historial.push(producto);
-        localStorage.setItem('productosClickeados', JSON.stringify(historial));
+        if (!historial.some(item => item.id.toString() === producto.id.toString())) {
+            historial.push(producto);
+            localStorage.setItem('productosClickeados', JSON.stringify(historial));
+        }
 
         // Verificar si el producto ya está en el carrito
         const existe = carrito.some(item => item.id.toString() === producto.id.toString());

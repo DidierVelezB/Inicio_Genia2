@@ -19,7 +19,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if (password_verify($contraseña, $datos->contraseña)) {
                 $_SESSION['usuario_id'] = $datos->idCliente;
                 $_SESSION['usuario'] = $datos->nombre;
-
+                
+                
                 if ($datos->rol === 'administrador') {
                     header("Location: ../carrito_venta/administracion.php"); // Redirige al admin
                 } else {
