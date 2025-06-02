@@ -8,8 +8,8 @@ body {
     margin: 0;
 }
 .container {
-    display: flex; /* Coloca los elementos en fila */
-    align-items: center; /* Alinea verticalmente */
+    display: flex; 
+    align-items: center;
     background: white;
     padding: 20px;
     border-radius: 15px;
